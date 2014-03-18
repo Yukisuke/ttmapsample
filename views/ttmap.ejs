@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TT Map Sample</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/tomtom.map.min.css" />
+    <link rel="stylesheet" type="text/css" src="stylesheets/tomtom.controls.min.css" />
+    <script type="text/javascript" src="javascripts/leaflet.js"></script>
+    <script type="text/javascript" src="javascripts/tomtom.map.js"></script>
+    <script type="text/javascript" src="javascripts/tomtom.controls.js"></script>
+    <script type="text/javascript">
+      var loadMap = function() {
+        var latlon = [<%=lat %>, <%=lon %>];
+        var map = new tomtom.Map({
+            domNode: "map",
+            center: latlon,
+            apiKey: "<%=apiKey %>",
+            zoom: <%=zoom %>,
+            scale: true,
+            panZoomBar: true,
+            displayTraffic: true,
+            });
+      };
+      window.onload = loadMap;
+    </script>
+  </head>
+  <body>
+    <div id="map" style="width:100%;height:500px"></div>
+  </body>
+</html>
+

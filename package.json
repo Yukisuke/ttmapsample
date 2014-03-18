@@ -1,0 +1,27 @@
+{
+  "name": "ttmapsample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "ejs": "*"
+  },
+  "description": "ERROR: No README data found!",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Yukisuke/ttmapsample.git"
+  },
+  "keywords": [
+    "map"
+  ],
+  "author": "Yukisuke",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Yukisuke/ttmapsample/issues"
+  }
+}
